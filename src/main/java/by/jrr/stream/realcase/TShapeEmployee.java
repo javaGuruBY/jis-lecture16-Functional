@@ -5,15 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Employee{
-    private int age;
+public class TShapeEmployee {
+
     private String name;
-    private String skill;
-    private int level;
-    private Department department;
-    private Double salary;
+    private Map<String, Integer> skillMap = new HashMap<>();
 }

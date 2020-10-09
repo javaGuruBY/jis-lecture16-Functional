@@ -36,7 +36,7 @@ public class EmployeServiceTest {
         logInfo(EmployeService.sort(getEmploye()));
     }
 
-    @Test(expected = ClassCastException.class) //compareToNotImplemented (not Comparable)
+    @Test
     public void sortByName() {
         logInfo(EmployeService.sortByName(getEmploye()));
     }
